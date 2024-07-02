@@ -6,17 +6,34 @@
     --azul: #4894FF;
     --cinza: #A3A3A3;
     --fonte: "Montserrat", sans-serif;
+    --fundo: #F6F6F6;
 }
 
+body {
+    background-color: var(--fundo);
+}
+
+/*Cabeçalho da página*/
 .cabecalho {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 1em;
+    padding: 2em 1em;
 }
+
+.cabecalho__caixa{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
 
 .cabecalho__imagem {
     border-radius: 8em;
+    width: 3.5em;
+    border: 0.1em solid black;
+    box-shadow: 0em 0.3em #C0C0C0;
 }
 
 .cabecalho__titulo {
@@ -30,4 +47,123 @@
     font-family: var(--fonte);
     font-size: 0.875em;
     color: var(--cinza);
+}
+
+/*Parte principal da página*/
+
+.consultas {
+    padding: 0em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.consultas__dia {
+    font-family: var(--fonte);
+    font-weight: bold;
+    color: var(--preto);
+    font-size: 1em;
+    margin-bottom: 0.6em;
+}
+
+/*Card de consulta*/
+
+.consultas__card {
+    background-color: white;
+    border-radius: 0.7em;
+    padding: 1em;
+}
+
+.card__topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 0em 0.75em 0em;
+}
+
+.card__topo__paciente {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+}
+
+.card__topo__paciente__perfil {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+}
+
+.card__topo__paciente__descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.card__topo__paciente__descricao__nome {
+    font-family: var(--fonte);
+    font-size: 0.875em;
+    color: var(--preto);
+    font-weight: bold;
+}
+
+.card__topo__paciente__descricao__tipo {
+    display: flex;
+    gap: 0.3em;
+}
+
+.card__topo__paciente__descricao__tipo__imagem {
+
+}
+
+.card__topo__paciente__descricao__tipo__texto {
+    font-family: var(--fonte);
+    font-size: 0.75em;
+    color: var(--cinza);
+}
+
+.consultas__card__horario {
+    font-family: var(--fonte);
+    font-size: 0.75em;
+    color: var(--preto);
+    margin: 0.8em 0em;
+}
+
+.consultas__card__botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.consultas__card__botoes__video {
+    padding: 0.8em 1em;
+    background-color: var(--laranja);
+    border-radius: 0.5em;
+    font-family: var(--fonte);
+    font-size: 0.875em;
+    color: white;
+    text-decoration: none;
+}
+
+.consultas__card__botoes__audio {
+    padding: 0.8em 1em;
+    border-radius: 0.5em;
+    font-family: var(--fonte);
+    font-size: 0.875em;
+    color: var(--preto);
+    border: 0.1em solid #ECECEC;
+    text-decoration: none;
+}
+
+.consultas__card__botao {
+    display: flex;
+    justify-content: center;
+}
+
+.consultas__card__botao__endereço {
+    border-radius: 0.5em;
+    font-family: var(--fonte);
+    font-size: 0.875em;
+    color: white;
+    background-color: var(--azul);
+    text-decoration: none;
+    padding: 0.8em 8em;
 }
