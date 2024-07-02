@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --preto: #464646;
+    --laranja: #FFB050;
+    --azul: #4894FF;
+    --cinza: #A3A3A3;
+    --fonte: "Montserrat", sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.cabecalho__imagem {
+    border-radius: 8em;
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte);
+    font-size: 1.375em;
+    font-style: bold;
+    color: var(--preto);
+}
+
+.cabecalho__texto {
+    font-family: var(--fonte);
+    font-size: 0.875em;
+    color: var(--cinza);
+}
